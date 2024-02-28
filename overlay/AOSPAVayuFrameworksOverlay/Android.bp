@@ -6,5 +6,5 @@
 
 runtime_resource_overlay {
     name: "AOSPAVayuFrameworksOverlay",
-    system_ext_specific: true,
+    device_specific: true,
 }
