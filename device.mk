@@ -320,6 +320,7 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi \
+    bootable/deprecated-ota \
     $(LOCAL_PATH)
 
 # WiFi
