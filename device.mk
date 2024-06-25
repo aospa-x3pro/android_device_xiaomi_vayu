@@ -323,6 +323,9 @@ PRODUCT_SOONG_NAMESPACES += \
     bootable/deprecated-ota \
     $(LOCAL_PATH)
 
+# Update
+AB_OTA_UPDATER := false
+
 # WiFi
 PRODUCT_PACKAGES += \
     libwpa_client
