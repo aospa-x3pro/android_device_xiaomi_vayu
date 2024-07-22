@@ -64,7 +64,7 @@ void set_ro_build_prop(const string &source, const string &prop,
 }
 
 void set_device_props(const string brand, const string device, const string model,
-        const string name, const string manufacturer, const string mod_device) {
+                      const string name, const string manufacturer) {
     // list of partitions to override props
     string source_partitions[] = {"", "bootimage.", "odm.", "product.",
                                   "system.", "system_ext.", "vendor."};
@@ -77,15 +77,14 @@ void set_device_props(const string brand, const string device, const string mode
         set_ro_build_prop(source, "name", name, true);
         set_ro_build_prop(source, "manufacturer", manufacturer, true);
     }
-    property_override("ro.product.mod_device", mod_device.c_str());
 }
 
 void vendor_load_properties() {
      // Detect device and configure properties
     if (GetProperty("ro.boot.hwc", "") == "INDIA") {
-        set_device_props("POCO", "bhima", "M2102J20SI", "bhima_in", "Xiaomi", "vayu_in_global");
+        set_device_props("POCO", "bhima", "M2102J20SI", "bhima_in", "Xiaomi");
     } else {
-        set_device_props("POCO", "vayu", "M2102J20SG", "vayu", "Xiaomi", "vayu_global");
+        set_device_props("POCO", "vayu", "M2102J20SG", "vayu", "Xiaomi");
     }
 
     // Set hardware revision
