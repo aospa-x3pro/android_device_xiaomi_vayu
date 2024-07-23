@@ -71,7 +71,7 @@ BOARD_KERNEL_CMDLINE := \
 BOARD_MKBOOTIMG_ARGS := --header_version 2
 
 TARGET_KERNEL_CONFIG := vayu_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/vayu
+TARGET_KERNEL_SOURCE := kernel/msm-4.14
 
 # Media
 TARGET_USES_ION := true
