@@ -131,6 +131,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.3.vendor
 
+# Display
+TARGET_USE_AIDL_QTI_MEMTRACK := true
+
 # Display Properties
 PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
