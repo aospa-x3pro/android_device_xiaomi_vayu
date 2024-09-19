@@ -794,3 +794,9 @@ vendor/bin/cnss-daemon
 
 # Xiaomi MAC
 vendor/bin/nv_mac
+
+# temp
+vendor/lib64/libStDrvInt.so|6091f1f496b87730f9a77e9ede504c4fa99c608a
+vendor/lib64/libsecureui.so|28f82685f84fb03637ec087dd4cace6122add1b3
+vendor/lib64/libsecureui_svcsock.so|6af612f057f4f28720d6db9b300b58c883da6539
+vendor/lib64/libspl.so|e2b3e2dd28b0eee567d72de696cd1e01288ae06f
