@@ -101,10 +101,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
-# Charger Properties
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.charger.enable_suspend=true
-
 # Data Module Properties
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.use_data_netmgrd=true \
